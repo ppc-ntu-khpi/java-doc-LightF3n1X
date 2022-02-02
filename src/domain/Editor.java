@@ -1,4 +1,8 @@
 package domain;
+/**
+ * Посада редактора
+ * @author Нікітовський Павло
+ */
 public class Editor extends Artist {
 
     public Editor(boolean electronicEditing, String[] skiils, String name, String jobTitle, int level, String dept) {
