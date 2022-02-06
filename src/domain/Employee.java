@@ -1,6 +1,14 @@
 package domain;
+/**
+ * Опис співробітників
+ * @author Нікітовський Павло
+ */
 public class Employee {
 
+    /**
+     * Форматування про співробітника
+     * @return з інформацією рядок  
+     */
     @Override
     public String toString() {
         return "\nEmployee ID= " + ID + "\nName= " + name + "\nJobTitle= " + jobTitle + "\nLevel= " + level + "\nDept= " + dept;
@@ -13,7 +21,13 @@ public class Employee {
     private String dept;
 
    // private static int employeesCount = 0;
-
+/** 
+ * Конструктор
+ * @param name Ім'я
+ * @param jobTitle Посада
+ * @param level Розряд
+ * @param dept Відділ
+ */
     public Employee(String name, String jobTitle, int level, String dept) {
         this();
         setName(name);
@@ -29,7 +43,9 @@ public class Employee {
         }
         this.dept = dept;
     }
-
+/**
+ * Id користувача
+ */
     public Employee() {
         ID = (int)(Math.random()*1000);
 //        if (ID > 10000) {

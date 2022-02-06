@@ -1,4 +1,8 @@
 package domain;
+/**
+ * Робота менеджера
+ * @author Нікітовський Павло
+ */
 public class Manager extends Employee {
 
     public Manager(Employee[] employees, String name, String jobTitle, int level, String dept) {
